@@ -54,7 +54,7 @@ def preprocess_conf(conf, sub_path):
             conf.hidden_dims_V = eval(value)
         elif option == 'hidden_dims_Q':
             conf.hidden_dims_Q = eval(value)
-        with open(os.path.dirname(sub_path) + '/Arguments.txt', 'w') as f:
+        with open(os.path.dirname(sub_path) + '/Arguments.txt', 'w', encoding="utf-8") as f:
             for key, value in iteritems(vars(conf)):
                 f.write('%s: %s\n' % (key, str(value)))
 
