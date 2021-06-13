@@ -9,7 +9,7 @@ Networks are trained using [Tensorflow 1.6.0](https://github.com/tensorflow/tens
 ### Usage
 Partial results of this paper can be reproduced exactly by running:
 ```
-./run_Walker2d.sh
+python main.py --env_name="Walker2d-v2" --reward_scale=5.0 
 ```
 
 Hyper-parameters can be modified with different arguments to main.py.
